@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageIndex>
+  <Information name="official" version="0.0.1" Language="CN,EN,JP" CNName="第一章" ENName="" JPName=""/>
+  <Intro >
+    <Info CN="adsflkjhalsdkfjhlaskjdfhlkj" EN="" JP=""/>
+  </Intro>
+  <DefaultKey
+    up="273"
+    down="274"
+    left="275"
+    right="276"
+    attack="122"
+    jump="99"
+    sprint="304"
+    backpack="115"
+    SP1="120"
+    SP2="97"
+    SP3="96"
+    SP4="95"
+   />
+
+  <Xml
+    Scene0Process="Process"
+    CNPackageText="Text"
+    GameData=""
+    
+    Scene0="Dialogue/CN"
+    Phone0="Phone/CN"
+    Phone1="Phone/CN"
+    Search="Event"
+    Thinking="Event"
+    />
+
+  <Bundle/>
+  <GameObject>
+  </GameObject>
+</PackageIndex>

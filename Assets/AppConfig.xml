@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppConfig>
+  <Path>
+    <Root>GameAssets/Root</Root>
+    <Update>GameAssets/Update</Update>
+    <General>GameAssets/General</General>
+    <Dynamic>GameAssets/Dynamic</Dynamic>
+    <DLC>DLC</DLC>
+    <MOD>MOD</MOD>
+    <Save>Save</Save>
+  </Path>
+
+  <IOCMappings>
+    <!--Basic-->
+    <GSFramework.IDataNode>
+      <AssetManager>GSFramework.AssetManager</AssetManager>
+      <ScriptManager>GSFramework.ScriptManager</ScriptManager>
+      <GameObjectManager>GSFramework.GameObjectManager</GameObjectManager>
+    </GSFramework.IDataNode>
+
+    <GSFramework.IDataContainer>GSFramework.XmlContainer</GSFramework.IDataContainer>
+    <GSFramework.IBundleContainer>GSFramework.AssetBundleContainer</GSFramework.IBundleContainer>
+    <GSFramework.IResourceContainer>GSFramework.ResourceContainer</GSFramework.IResourceContainer>
+
+    <GSFramework.IIOCContainer>GSFramework.IOCContainer</GSFramework.IIOCContainer>
+    <GSFramework.ISingletonContainer>GSFramework.SingletonContainer</GSFramework.ISingletonContainer>
+    <GSFramework.IObjectPool>GSFramework.ObjectPool</GSFramework.IObjectPool>
+
+    <GSFramework.IAssembler>GSFramework.Assembler</GSFramework.IAssembler>
+    <GSFramework.IGameObjectPool>GSFramework.GameObjectPool</GSFramework.IGameObjectPool>
+
+    <GSFramework.IUpdateManager>GSFramework.UpdateManager</GSFramework.IUpdateManager>
+
+    <GSFramework.IInitializer>
+      <Inject>GSFramework.InjectionInitializer</Inject>
+      <HandlerEventBinding>GSFramework.HandlerEventBindingInitializer</HandlerEventBinding>
+      <GetterEventBinding>GSFramework.GetterEventBindingInitializer</GetterEventBinding>
+      <UIBinding>GSFramework.UIBindingInitializer</UIBinding>
+    </GSFramework.IInitializer>
+
+
+    <!--MsgFrame-->
+    <GSFramework.IMsgHandler>
+      <Common>GSFramework.CommonMsgHandler</Common>
+      <Wait>GSFramework.WaitMsgHandler</Wait>
+    </GSFramework.IMsgHandler>
+
+    <!--Observable-->
+    <GSFramework.IObservableManager>GSFramework.ObservableManager</GSFramework.IObservableManager>
+
+    <!--UI-->
+    <GSFramework.IUIViewModel>GSFramework.UIViewModelBase</GSFramework.IUIViewModel>
+    <GSFramework.IUIBinder>
+      <Text>GSFramework.SimpleTextBinder</Text>
+      <TextMeshProUGUI></TextMeshProUGUI>
+    </GSFramework.IUIBinder>
+
+  </IOCMappings>
+</AppConfig>
